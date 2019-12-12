@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/fonts.css">
@@ -12,58 +13,75 @@
 
 <body>
     <div class="new-collection">
-
-        <header class="new-collection__header">
+            
+        <div class="black-rectangle">
             <h1 class="header__logo">
                 LOCO
             </h1>
+            <div class="lang-switchers"> </div>
             <a class="header__lang-switchers" href="#">RU</a>
-            <div class="lang-switchers"></div>
-            <nav class="header_burger">
-                <span class="header__burger-line"></span>
-                <span class="header__burger-line"></span>
-                <span class="header__burger-line"></span>
-            </nav>
-        </header> <!-- /.new-collection__header-->
-      
+            
+            <nav class="social-network">
+                <a class="social-network__bt" href="#" title="Инстаграм">
+                        <img class="social-network__img-instagram" src="img\INST.svg" alt="Instagram">
+                </a>
+
+                <a class="social-network__bt" href="#" title="В контакте">
+                        <img class="social-network__img-vk" src="img\vk.svg" alt="VK">
+                </a>
+
+                <a class="social-network__bt" href="#" title="Фейсбук">
+                        <img class="social-network__img-facebook" src="img\FB.svg" alt="Facebook">
+                </a>   
+            </nav> <!-- /.social-network -->
+        </div> 
+
         <section class="new-сollection__content">
-            <h1 class="content-title">
-                Новая коллекция
-            </h1>
-            <p class="content__desc-new-сollection">
-                Бесплатная доставка включена. Предложение действует на сайте loco.com
-                в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите
-                скриншот данного предложения. В магазинах предложение не суммируется с 
-                другими акциями, предложениями и распродажей.
-            </p>
-            <button class="content__bt" type="submit" formaction="#">
-                Читать дальше
-            </button>
-            <a class="content__link" href="#" title="Посмотреть другие товары">Другие предложения</a>
-            <div class="content-arrow"></div>  
-            <img сlass="content__img-collection" src="#" alt="Новая коллекция">
-        </section> <!-- /.new-collection__content -->   
+            <div class="new-collection__header">
+                <div class="header__menu">
+                        <nav class="header__burger">
+                            <span class="header__burger-line"></span>
+                            <span class="header__burger-line"></span>
+                        </nav>
+                </div>
+            </div> 
 
-        <nav class="social-network"></nav>
-                <button class="social-network__bt" type="submit" formaction="#">
-                    <img class="social-network__img-instagram" src="#" alt="Instagram">
+            <div class="new-collection__wrap">
+                <h1 class="content-title">
+                    Новая коллекция
+                </h1>
+                <p class="content__desc-new-сollection">
+                    Бесплатная доставка включена. Предложение действует на сайте <a class="content__desc-link" href="#">loco.com</a> 
+                    в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите
+                    скриншот данного предложения. В магазинах предложение не суммируется с
+                    другими акциями, предложениями и распродажей.
+                </p>
+                <button class="content__bt" type="submit" formaction="#">
+                    ЧИТАТЬ ДАЛЬШЕ
                 </button>
+                <a class="content__link" href="#" title="Посмотреть другие товары">ДРУГИЕ ПРЕДЛОЖЕНИЯ</a>
+                <img src="img\Vector 2.1.png" alt="arrow" class="content-arrow">
+            </div>
+            
+        </section> <!-- /.new-collection__content --> 
 
-                <button class="social-network__img-vk" type="submit" formaction="#">
-                    <img src="#" alt="VK">
-                </button>
-                <button class="social-network__img-facebook" type="submit" formaction="#">
-                    <img src="#" alt="Facebook">
-                </button>
-                <div class="scroll"></div>
-        </nav> <!-- /.social-network -->
-   </div>      <!-- /.new-collection -->
+            <div class="img">
+                <img src="img/pete-bellis-432867-unsplash.jpg" alt="">
+            </div>
+            <div class="img__mobile">
+                <img src="img/pete-bellis.png" alt="">
+                <svg class="vector" width="34" height="20" viewBox="0 0 34 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 3L17 17L31 3" stroke="#020202" stroke-width="3" stroke-linecap="square"/>
+                </svg>
+            </div>   
+   </div> <!-- /.new-collection -->
+
 
 
    <div class="product">
     <img class="product__img" src="#" alt="фото товара">
  
-    <section class="product__select">
+   <section class="product__select">
 
         <h2 class="select__title-product">
             Кожаный клатч
@@ -71,12 +89,13 @@
         <h2 class="select__subtitle-product">
             ОСЕННЯЯ КОЛЛЕКЦИЯ
         </h2> 
+        
         <p class="select__desc-product">
             Бесплатная доставка включена. Предложение действует на сайте loco.com 
             и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите 
             скриншот данного предложения. В магазинах предложение не суммируется с другими 
             акциями, предложениями и распродажей.
-        </p>
+        </p> 
         <div class="select__bts-product">
             <div class="select__bts-product-color">
                 <span class="select__bts-product select__bts-product-color_grey"></span>
@@ -100,7 +119,7 @@
 </div>         <!-- /.product -->
  
 
-   <div class="look">
+  <div class="look">
         
        <img class="look__img" src="#" alt="Product">
        <div class="look-black-rectangle"></div>  
@@ -124,12 +143,12 @@
                 ДОБАВИТЬ В КОРЗИНУ
             </button>
        </section>  <!-- /.look__content -->
-    <a class="look__link-excerpt" href="#" title="Посмотреть другие товары">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>  
+   <a class="look__link-excerpt" href="#" title="Посмотреть другие товары">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>  
     <div class="look__arrow-excerpt"></div>  
    </div>          <!-- /.look -->
 
    
-   <footer class="footer">
+  <footer class="footer">
         <p class="footer__text">РАЗРАБОТАНО В</p>
         <img class="footer__img" src="#" alt="Разработано в WebHero School">
    </footer>      <!-- /.footer -->
