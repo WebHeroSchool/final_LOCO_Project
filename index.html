@@ -5,22 +5,36 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
+    
 
     <title>LOCO</title>
 </head>
 
 <body>
     <div class="new-collection">
+
+        <div class="new-collection__header">
+            <div class="header__menu">
+                    <nav class="header__burger">
+                        <span class="header__burger-line"></span>
+                        <span class="header__burger-line"></span>
+                    </nav>
+            </div>
+        </div> 
             
         <div class="black-rectangle">
-            <h1 class="header__logo">
-                LOCO
-            </h1>
-            <div class="lang-switchers"> </div>
-            <a class="header__lang-switchers" href="#">RU</a>
-            
+            <div class="wrap__header__logo">
+                <h1 class="header__logo">
+                    LOCO
+                </h1>
+                <div class="wrap">
+                    <a class="header__lang-switchers" href="#">RU</a>
+                    <span class="lang-switchers"> </span>
+                </div>
+            </div>
             <nav class="social-network">
                 <a class="social-network__bt" href="#" title="Инстаграм">
                         <img class="social-network__img-instagram" src="img\INST.svg" alt="Instagram">
@@ -37,16 +51,12 @@
         </div> 
 
         <section class="new-сollection__content">
-            <div class="new-collection__header">
-                <div class="header__menu">
-                        <nav class="header__burger">
-                            <span class="header__burger-line"></span>
-                            <span class="header__burger-line"></span>
-                        </nav>
-                </div>
-            </div> 
 
             <div class="new-collection__wrap">
+                <div class="new-сollection__img">
+                            <img src="img/pete-bellis-432867-unsplash.jpg" alt="">
+                </div>
+            <div class="wrap__content">
                 <h1 class="content-title">
                     Новая коллекция
                 </h1>
@@ -62,13 +72,17 @@
                 <a class="content__link" href="#" title="Посмотреть другие товары">ДРУГИЕ ПРЕДЛОЖЕНИЯ</a>
                 <img src="img\Vector 2.1.png" alt="arrow" class="content-arrow">
             </div>
+            </div>
+            <div class="scroll">
+                <img class="img__scroll" src="img\Rectangle 8.svg" alt="scroll">
+                <img class="img__scroll-point" src="img\Rectangle 9.svg" alt="scroll">
+
+            </div>
             
         </section> <!-- /.new-collection__content --> 
 
-            <div class="img">
-                <img src="img/pete-bellis-432867-unsplash.jpg" alt="">
-            </div>
-            <div class="img__mobile">
+            
+            <div class="new-сollection-img__mobile">
                 <img src="img/pete-bellis.png" alt="">
                 <svg class="vector" width="34" height="20" viewBox="0 0 34 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 3L17 17L31 3" stroke="#020202" stroke-width="3" stroke-linecap="square"/>
