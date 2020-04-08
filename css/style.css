@@ -192,11 +192,8 @@ body {
     position: relative;
     top: 102px;
     max-width: 515px;
-    min-width: 10%;
-    max-height: 388px;
-    min-height: 10%; 
+    height: 388px; 
 }
-
 
 .content-title{
     
@@ -209,7 +206,6 @@ body {
     
     color: #000; 
 }
-
 
 .content__desc-new-сollection{ 
 
@@ -512,12 +508,228 @@ body {
 }
 
 
-
-
-
-/* section two */
+/* section two Product */
 .product{
-    /* background-color: #FAE8E4; */
+
+    height: 900px;
+    min-width: 375px;
+    max-width: 1900px;
+    background-color: #FAE8E4;
 }
 
+.product-clatch-gray__img{
+
+    position: relative;
+    z-index: 1;
+    left: 139px;
+    top: 3px;
+}
+
+
+.product-clatch-pink__img{
+
+    position: relative;
+    z-index: 2;
+    top: 29px;
+    right: 169px;
+}
+
+
+.product__select{
+
+    position: relative;
+    z-index: 2;
+    width: 489px;
+    height: 556px;
+    left: 880px;
+    bottom: 676px;
+    background: #FFF;
+
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    
+}
+
+.select__title-product{
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 41px;
+    color: #000000;
+    left: 55px;
+    top: 44px;
+    position: relative;
+    margin-bottom: 60px
+}
+
+.select__subtitle-product{
+
+    position: relative;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.07em;
+    color: #000000;
+    opacity: 0.5;
+    left: 55px;
+    margin-bottom: 61px;
+}
+
+.select__desc-product__wrap{
+
+    width: 370px;
+    height: 147px;
+    position: relative;
+    left: 54px;
+    margin-bottom: 47px; 
+}
+
+.select__desc-product{
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 21px;
+
+    color: #000000;
+
+    opacity: 0.5;
+}
+
+.select__bts-product__wrap{
+
+    display: flex;
+    justify-content: space-between;
+    width: 349px;
+    height: 40px;
+    left: 54px;
+    position: relative;
+    margin-bottom: 56px;
+}
+
+.select__bts-product-color{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 165px;
+    height: 40px;
+   
+}
+
+.select__bts-product{
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.select__bts-product-color_grey{
+  
+    background: #DEDEDE;
+}
+
+.color_pink-checked{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    
+}
+.select__bts-product-color_pink{
+
+    background: #F29F9F;
+}
+
+.select__bts-product-color_blue{
+
+    background: #A8BFF9;
+    
+}
+
+.select__bts-product-color_green{
+    background: #90BD8F;
+
+}
+
+
+.product__select-price{
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    width: 114px;
+    height: 40px;
+    color: #000;
+}
+
+.product__select-quantity__wrap{
+
+    display: flex;
+    justify-content: space-between;
+    width: 364px;
+    height: 45px;
+    left: 54px;
+    position: relative;
+}
+
+.product__select-quantity{
+
+    border: 2px solid black;
+    width: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    justify-content: space-around;
+    
+}
+
+.product__select__bt-basket{
+
+    border: 2px solid black;
+    width: 252px;
+   
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 0px;
+    /* identical to box height */
+    color: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product__select-excerpt{
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration: none; 
+
+}
+.product__select__link{
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 478px;
+    height: 15px;
+    bottom: 636px;
+    left: 884px;
+   
+}
 
