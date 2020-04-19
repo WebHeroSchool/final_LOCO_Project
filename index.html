@@ -19,12 +19,6 @@
 
             <div class="black-rectangle"> </div> 
             <div class="new-collection__header">
-                <div class="header__menu">
-                        <nav class="header__burger">
-                            <span class="header__burger-line"></span>
-                            <span class="header__burger-line"></span>
-                        </nav>
-                </div>
                 
                 <div class="wrap__header__logo">
                     <h1 class="header__logo">
@@ -36,6 +30,13 @@
                             <img  class="img__lang-switchers" src="img\lang-switchers.svg" alt="language switch"> 
                         </a>  
                     </div>
+                </div>
+
+                <div class="header__menu">
+                        <nav class="header__burger">
+                            <span class="header__burger-line"></span>
+                            <span class="header__burger-line"></span>
+                        </nav>
                 </div>
 
                 <nav class="social-network">
@@ -59,22 +60,28 @@
                 <div class="new-collection__wrap">
                     <div class="new-сollection__img">
                         <img class="new-сollection__img-pk" src="./img/pete-bellis-432867-unsplash.jpg" alt="Новая коллекция">
+                        <!-- <img class="new-сollection__img-mobile" src="./img/qwe_mob.png" alt=""> -->
                     </div>
                     <div class="wrap__content">
                         <h1 class="content-title">
                             Новая коллекция
                         </h1>
-                        <p class="content__desc-new-сollection">
-                            Бесплатная доставка включена. Предложение действует на сайте <a class="content__desc-link" href="#">loco.com</a> 
-                            в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите
-                            скриншот данного предложения. В магазинах предложение не суммируется с
-                            другими акциями, предложениями и распродажей.
-                        </p>
-                        <button class="content__bt" type="submit" formaction="#">
-                            ЧИТАТЬ ДАЛЬШЕ
-                        </button>
-                        <a class="content__link" href="#" title="Посмотреть другие товары">ДРУГИЕ ПРЕДЛОЖЕНИЯ</a>
-                        <img src="img\Vector 2.1.png" alt="arrow" class="content-arrow">
+                        <div class="content__desc-new-сollection__wrap">
+                            <p class="content__desc-new-сollection">
+                                Бесплатная доставка включена. Предложение действует на сайте <a class="content__desc-link" href="#">loco.com</a> 
+                                в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите
+                                скриншот данного предложения. В магазинах предложение не суммируется с
+                                другими акциями, предложениями и распродажей.
+                            </p>
+                        </div>
+                        
+                            <div class="content__bt" type="button" formaction="#">
+                                ЧИТАТЬ ДАЛЬШЕ
+                            </div>
+                        <div class="wrap__content__link">
+                            <a class="content__link" href="#" title="Посмотреть другие товары">ДРУГИЕ ПРЕДЛОЖЕНИЯ</a>
+                            <img src="img\Vector 2.1.png" alt="arrow" class="content-arrow">
+                        </div>    
                     </div>
                 </div>
                 
@@ -131,15 +138,15 @@
             </section> /.product__select -->
             <!-- <div class="product__select__link">
                 <a class="product__select-excerpt" href="#" title="Посмотреть другие товары">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>  
-                <img class="product__arrow-excerpt" src="img\Vector_2.2.png" alt="фото товара">
+                <img class="product__arrow-excerpt" src="img\Vector_2.2.png" alt="другие товары">
             </div>
-    </div>          /.product 
-     -->
+    </div>         /.product -->
+    
 
     <!-- <div class="look">
-            
-        <img class="look__img" src="#" alt="Product">
-        <div class="look-black-rectangle"></div>  
+
+        <div class="look-black-rectangle"></div>     
+        <img class="look__img" src="img\section_look.png" alt="Product">
         <section class="look__content">
             <h2 class="look__content-title">
                     Serene Total Look
@@ -147,28 +154,40 @@
             <h3 class="look__content-subtitle">
                     ОСЕННЯЯ КОЛЛЕКЦИЯ
             </h3>
-            <p class="look__content-desc">
+            <div class="look__content-desc__wrap">
+                <p class="look__content-desc">
                     Джинсы, свитер, обувь.
+                    <br> 
                     В комплект также входит пакет ароматного чая и кружка.
-            </p> 
+                </p> 
+            </div>    
             <div class="look__content-quantity">
+                <div class="look__quantity">
                     <span class="look__quantity_less">-</span>
-                    <input class="look__quantity-value" type="text" size="1" value="1"/>
+                    <span class="look__quantity-value">1</span>
                     <span class="look__quantity_more">+</span>
-                </div>
-                <button type="look__content__bt-basket" formaction="#">
+                </div>    
+                <div class="look__content__bt-basket" type="button" formaction="#">
                     ДОБАВИТЬ В КОРЗИНУ
-                </button>
+                </div>
+            </div>
+            
         </section>  /.look__content -->
-        <!-- <a class="look__link-excerpt" href="#" title="Посмотреть другие товары">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>  
-            <div class="look__arrow-excerpt"></div>  
-        </div>          /.look -->
+
+        <!-- <div class="look__link-excerpt__wrap">
+            <a class="look__link-excerpt" href="#" title="Посмотреть другие товары">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>  
+            <img class="look__arrow-excerpt" src="img\Vector_2.3.png" alt="другие товары">
+        </div>
+
+        <div class="footer">
+            <p class="footer__text">РАЗРАБОТАНО В</p>
+            <img class="footer__img" src="img\webHeroSchool.png" alt="Разработано в WebHero School">
+        </div> /.footer 
+
+    </div> /.look -->
 
         
-        <!-- <footer class="footer">
-                <p class="footer__text">РАЗРАБОТАНО В</p>
-                <img class="footer__img" src="#" alt="Разработано в WebHero School">
-        </footer>      /.footer -->
+          
     </div>
 </body>
 </html>
