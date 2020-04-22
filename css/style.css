@@ -7,16 +7,17 @@
 body { 
 
     font-family: Montserrat, Arial, sans-serif;  
+    font-style: normal;
     box-sizing: border-box;
     overflow-x: hidden;  
 }
 .wrap__site{
 
     top: 0px; 
-    min-width: 375px;
-    max-width: 1900px;
-    
-    /* display: block;    */
+    min-width: 20%;
+    max-width: 1900px; 
+    width:100%;
+    margin:  auto;
     position: relative;
 }
 
@@ -43,7 +44,8 @@ body {
 .wrap__header__logo{
 
     height: 31px;
-    width: 387px;
+    max-width: 387px;
+    min-width: 20%;
     position: relative;
     bottom: 863px;
     left: 53px;
@@ -65,22 +67,18 @@ body {
 .header__lang-switchers{
 
     text-decoration: none;
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    text-align: right;
     color: #FFFFFF;
 }
 
 
 .header__logo{
 
-    font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 37px;
-    text-align: center;
     letter-spacing: 0.07em;
     color: #FFFFFF;
     position: relative;
@@ -92,7 +90,6 @@ body {
 
     top: 0px;
     position: absolute;
-    /* z-index: 4; */
     display: flex;  
     right:  0; 
     width: 94px; 
@@ -128,12 +125,22 @@ body {
 
 /*section new-сollection__content*/
 
+
+.new-collection__wrap{
+
+    display: flex;
+
+}
 .new-сollection__img-pk{
 
     position: relative;
     z-index: 5;
     left: 186px;
     bottom: 805px;
+    /* max-width: 100%;
+    min-width: 30%;
+    max-height: 100%;
+    min-height: 30%; */
 }
 
 
@@ -141,10 +148,10 @@ body {
 
     position: relative;
     z-index: 5;
-    left: 790px;
-    bottom: 1265px;
-    width: 468px;
-    height: 295px;
+    left: 240px;
+    bottom: 704px;
+    max-width: 468px;
+    min-height: 30%;
 }
 
 
@@ -155,13 +162,16 @@ body {
     font-size: 80px;
     line-height: 82px;
     margin-bottom: 17px;
+   
 }
 
 
 .content__desc-new-сollection__wrap{
 
     position: relative;
-    width: 450px;
+    max-width: 450px;
+    min-width: 30%;
+    overflow-wrap: break-word;
     height: 126px;
     margin-bottom: 20px;
 }
@@ -188,11 +198,9 @@ body {
 
     position: relative;
     z-index: 5;
-    /* left: -5px; */
     right: 5px;
     height: 42px;
     width: 204px;
-    font-style: normal;
     font-weight: 500;
     font-size: 13px;
     top: 19px;
@@ -214,7 +222,6 @@ body {
     bottom: 9px;
     display: flex;
     left: 190px;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -253,14 +260,14 @@ body {
     width: 30px;
     height: 48px;
     position: relative;
-    bottom: 1016px;
+    bottom: 721px;
     left: 708px; 
     background-repeat: no-repeat;
 }
 
 
-/* ipad горизонт */
-@media only screen and (max-width: 1366px) {
+/* ipad pro */
+@media only screen and (max-width: 1366px) and (min-width:1025px){
 
     .wrap__site{
         overflow-x: hidden; 
@@ -270,6 +277,7 @@ body {
     .new-collection{
 
         max-width: 1366px;
+        min-width:1023px;
         height: 1024px;
         position: relative;
         z-index: 1;
@@ -278,22 +286,26 @@ body {
     .black-rectangle{
 
         height: 1024px;
-        width: 409px;
+        max-width: 409px;
+        min-width: 200px;
     } 
 
 
     .wrap__header__logo{
 
-        width: 322px;
+        max-width: 322px;
+        min-width: 20%;
         bottom: 988px;
     }
     
     .wrap__content{
         
-        left: 749px;
-        bottom: 1358px;
-        width: 468px;
+        bottom: 818px;
+        width: 100%; 
+        max-width: 468px;
+        min-width: 20%;
         height: 295px;
+        left: 194px;
     }
    
     
@@ -301,48 +313,63 @@ body {
 
         left: 123px;
         bottom: 894px;
+        /* max-width: 90%;
+        min-width: 30%;
+        max-height: 90%;
+        min-height: 30%; */
     }
     
 }
 
 
-@media only screen and (max-width: 1024px) {
+
+/* ipad*/
+@media only screen and (max-width: 1024px) and (min-width: 1010px){
 
     .wrap__site{
+
         overflow-x: hidden; 
     }
 
 
     .wrap__header__logo{
 
-        width: 236px;
+        max-width: 236px;
+        min-width: 30%;
         bottom: 740px;
     }
+
 
     .new-collection{
 
         max-width: 1024px;
+        min-width: 480px;
         height: 768px;
         position: relative;
         z-index: 1;
     }
 
+
     .black-rectangle{
 
         height: 768px;
-        width: 302px;
+        max-width: 302px;
+        min-width: 150px;
     } 
+
 
     .content-title{
 
         font-size: 75px;
     }
 
+
     .wrap__content{
         
-        left: 525px;
-        bottom: 1095px;
-        width: 468px;
+        left: 129px;
+        bottom: 691px;
+        max-width: 468px;
+        min-width: 30%;
         height: 295px;
     }
    
@@ -350,8 +377,12 @@ body {
     .new-сollection__img-pk{
 
         left: 82px;
-        bottom: 693px;
-        width: 400px;
+        bottom: 754px;
+        /* max-width: 85%;
+        min-width: 30%;
+        max-height: 85%;
+        min-height: 30%; */
+        
     }
 
 
@@ -362,14 +393,54 @@ body {
 
     .img__scroll{
 
-        bottom: 863px;
+        bottom: 567px;
         left: 539px;
     }
+
+    /* .content-arrow{
+        display: none;
+    } */
 
 }
 
 
-@media (max-width: 480px)   { 
+@media only screen and (max-width: 1265px) and (min-width: 551px){
+
+
+    .new-сollection__img-pk{
+
+        left: 109px;
+        /* max-width: 75%;
+        min-width: 55%;
+        max-height: 75%;
+        min-height: 55%; */
+        margin-bottom: 14px;
+        
+    }
+
+    .new-collection__wrap{
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrap__content {
+
+        left: 109px;
+        bottom: 639px;
+    }
+
+    .img__scroll{
+
+        display: none;
+    }
+
+    
+}
+
+
+/*телефоны*/
+@media (max-width: 550px)   { 
 
     .social-network, .new-сollection__img-pk, .img__scroll,
     .wrap__header__lang-switchers, .content__desc-new-сollection,
@@ -377,6 +448,9 @@ body {
         display: none;
     }
   
+    .wrap__site{
+        overflow-x: hidden; 
+    }
 
     .header__menu { 
 
@@ -394,11 +468,6 @@ body {
 
     .new-collection__header{
         width: 414px;
-    }
-
-
-    .wrap__site{
-        overflow-x: hidden; 
     }
 
 
@@ -429,6 +498,11 @@ body {
         height: 694px;
         left: 0px;   
     }
+
+    .new-collection__wrap {
+        display: block;
+    }
+
     .new-сollection__img{
 
         z-index: -1; 
@@ -464,6 +538,7 @@ body {
         margin: auto;
         position: relative;
         background-repeat: no-repeat;
+        z-index: 4;
     }
     
 }
